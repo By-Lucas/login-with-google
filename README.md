@@ -2,7 +2,10 @@
 # LOGIN WITH GOOGLE - Inglish
 ## it will be a portfolio.
 
-<img href='logo.png' align:center width='400px' height='400px'>
+<p align="center">
+  <img width="460" height="300" src="logo.png">
+</p>
+
 
 ## Project where the user logs in using the google gmail account.
 
