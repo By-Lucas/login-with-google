@@ -1,0 +1,80 @@
+{% load bootstrap %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block head_title %} Login Google {% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script>
+      $(function(){
+      $(".button-collapse").sideNav();
+      });
+      </script>
+
+    {% block extra_head %}
+    {% endblock %}
+
+  </head>
+
+  <body>
+      <div class="menu-principal">
+        
+
+        {% block body %}
+
+        <div class="images">
+          <img  src="/static/images/tk-group.png" width="150px" alt="">
+      </div>
+
+      <div class="div-meio">
+        <span></span>
+      </div>
+
+        <div class="menu">
+
+          <ul >
+            {% if user.is_authenticated %}
+              
+              <li><a href="{% url 'account_email' %}">Change E-mail</a></li>
+              <li><a href="{% url 'account_logout' %}">Desconectar</a></li>
+              <li><a href="{% url 'account_login' %}">Inicio</a></li>
+
+            {% else %}
+              
+              <li><a href="{% url 'account_login' %}">Fazer login</a></li>
+              <li><a href="{% url 'account_signup' %}">Cadastrar</a></li>
+              <li><a href="{% url 'google_login' %}">Inicio</a></li>
+
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+      
+      {% if messages %}
+        
+        <div>
+          <strong>Messages:</strong>
+          <ul>
+            {% for message in messages %}
+            <li>{{message}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        
+        {% endif %}
+        
+        {% block content %}
+        {% endblock %}
+
+        {% endblock %}
+        {% block extra_body %}
+
+      
+      
+    {% endblock %}
+    
+  </body>
+</html>

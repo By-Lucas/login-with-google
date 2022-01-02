@@ -1,0 +1,46 @@
+{% load socialaccount %}
+
+{% load static %}
+<html>
+
+<head>
+    <title>Google OAuth2</title>
+    
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="container">
+    
+
+    {% if user.is_authenticated %}
+    <h2>Conectado Google OAuth2</h2>
+    <br>
+    <p>Bem vindo, {{ user.username }} !</p>
+    <br>
+    <a class="sair" href="{% url 'logout' %}">Logout</a>
+
+    {% else %}
+    <h1>Teste login Google OAuth2</h1>
+        <div class="footer">
+            <span>Conecte com a sua rede social</span>
+            <div class="social-fields">
+              <div class="social-field facebook">
+                <a href="{% provider_login_url 'google' %}">
+                  <i class="fab fa-google"></i>
+                  Fazer login com google
+                </a>
+              </div>
+      
+            </div>
+          </div>
+        
+
+    {% endif %}
+
+    
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+/*
+* 
+* @author Lucas Silva
+*/
+
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+	--gradient: (45deg, #8e2de2, #4a00e0);
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+}
+
+
+body{
+    background-color: #44475a;
+    margin: 0px;
+    font:  "Helvetica Neue",;
+}
+
+.container{
+	width: 100%;
+    height: 600px;
+	box-shadow: 5px 5px 15px #f0ecec33;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+
+.box{
+    width: 500px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 5px 5px 15px #9093a5;
+    border-radius: 7px;
+}
+
+.box p{
+    color: black;
+}
+
+.box h1{
+    color: black;
+}
+
+.box a{
+    text-decoration: none;
+
+}
+
+.menu-principal{
+	width: 100%;
+    padding-bottom: 10px;
+	box-shadow: 5px 5px 15px rgba(22, 20, 20, 0.2);
+    align-items: center;
+    position: relative;
+    background-color: #282a36;
+    display: inline-block;
+}
+
+
+.block-container{
+	background: white;
+	width: 600px;
+	max-width: 300px;
+	min-height: 40px;
+	padding: 2rem;
+	box-shadow: 5px 5px 15px rgba(22, 20, 20, 0.2);
+	border-radius: 8px;
+    align-items: center;
+}
+
+.images{
+    width: 200px;
+    position: relative;
+    /*border: solid 1px red;*/
+    position: relative;
+    padding-left: 10px;
+    padding-top: 10px;
+    left:0px;
+    float:left;
+    
+}
+
+/* Div do meio */
+
+.div-meio{
+    width: 300px;
+    position: relative;
+    position: relative;
+    left:0px;
+    float: left;
+}
+
+/* TEXTOS E CORES ----------*/
+h1{
+    color: #fff;
+}
+p{
+    color: #fff;
+}
+
+.branco{color: white;}
+.preto{color: black;}
+.vermelho{color: red;}
+.azul{color: blue;}
+.rosa{
+    color: #ff79c6;
+    background-color: #44475a;
+    font-size: 45px;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    box-shadow: 5px 5px 15px #9093a5;
+    border-radius: 7px;
+}
+
+
+/* MENU PRINCIPAL ---------------------------------------------------- */
+.menu{
+    padding: 17px;
+    align-items: center;
+    /*border:1px solid #c0c0c0;*/
+    border-radius: 5px;
+    left:0px;
+    float:left;
+    width: 80%;
+    position: relative;
+}
+
+.menu ul{
+    padding:0px;
+    margin:0px;
+    float: left;
+    width: 100%;
+    background-color: transparent;
+    list-style:none;
+    font:80% Tahoma;
+}
+
+li {
+    list-style-type: none;
+}
+
+.menu li{
+    position:relative;
+    float:right;
+    
+}
+
+.menu img{
+    float:left;
+    width: 160px;
+}
+
+.menu li a{
+    color:rgb(245, 238, 238); 
+    text-decoration:none; 
+    padding:5px 10px; 
+    display:block;
+}
+
+.menu li a:hover{
+    color: #ff79c6;
+    border-bottom: #ff79c6 1px solid;
+    transition: 0.3s;
+    text-shadow:0px 0px 5px #b91472;
+}
+
+.menu li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:#fff;
+    display:none;
+}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+    display:block;
+    width:120px;
+    }
+
+/* FIM DE MENU ------------------------------------------------------------- */
