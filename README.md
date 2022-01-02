@@ -16,7 +16,9 @@
 # LOGIN COM O GOOGLE - Portugês
 ## será um portifólio.
 
-<img href='logo.png' align:center width='400px' height='400px'>
+<p align="center">
+  <img width="460" height="300" src="logo.png">
+</p>
 
 ## Projeto onde o usuario efetua o login utilizando a conta gmail do google.
 
